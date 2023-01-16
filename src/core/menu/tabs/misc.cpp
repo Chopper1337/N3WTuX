@@ -51,7 +51,7 @@ void Menu::drawMiscTab() {
             }
 
 
-            ImGui::BeginChild("Hitmarkers", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.64, ImGui::GetWindowHeight() * 0.21f), true); {
+            ImGui::BeginChild("Hitmarkers", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.64, ImGui::GetWindowHeight() * 0.31f), true); {
                 ImGui::Text("Hitmarkers");
                 ImGui::Separator();
                 ImGui::Checkbox("Hitlogs", &CONFIGBOOL("Misc>Misc>Hitmarkers>Hitlogs"));
