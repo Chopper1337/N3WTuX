@@ -135,14 +135,13 @@ void Menu::drawMiscTab() {
                     Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Movement>EdgeBug Key"), &toggled);
                     ImGui::SameLine();
                 }
-
+                ImGui::Checkbox("EdgeBug", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug"));
                if (CONFIGBOOL("Misc>Misc>Movement>Block Bot")) {
                 	static bool toggled = false;
                 	Menu::CustomWidgets::drawKeyBinder("Key", &CONFIGINT("Misc>Misc>Movement>Block Bot Key"), &toggled);
                 	ImGui::SameLine();
                 }
                 ImGui::Checkbox("Block Bot", &CONFIGBOOL("Misc>Misc>Movement>Block Bot"));
-                ImGui::Checkbox("EdgeBug", &CONFIGBOOL("Misc>Misc>Movement>EdgeBug"));
                 ImGui::Checkbox("Fast Duck", &CONFIGBOOL("Misc>Misc>Movement>Fast Duck"));
                 ImGui::SameLine();
                 ImGui::TextDisabled("?");
