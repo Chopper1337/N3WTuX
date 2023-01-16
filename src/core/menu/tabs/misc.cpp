@@ -102,7 +102,7 @@ void Menu::drawMiscTab() {
                 ImGui::EndChild();
             }*/
 
-            ImGui::BeginChild("Movement", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.326f), true); {
+            ImGui::BeginChild("Movement", ImVec2(ImGui::GetWindowContentRegionWidth() * 0.38, ImGui::GetWindowHeight() * 0.6f), true); {
                 ImGui::Text("Movement");
                 ImGui::Separator();
                 ImGui::Checkbox("Auto Hop", &CONFIGBOOL("Misc>Misc>Movement>Auto Hop"));
